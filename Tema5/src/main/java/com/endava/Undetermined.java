@@ -8,10 +8,14 @@ public class Undetermined {
         Scanner keyboardInput = new Scanner(System.in);
         System.out.println("Please insert numbers, take in consideration that if you input 0 the sequence will end.");
 
-        double number = keyboardInput.nextDouble();
+        double number = 1;
+        double sum = 0;
 
         while (number != 0) {
             number = keyboardInput.nextDouble();
+            sum = sum + number;
         }
+
+        System.out.println(sum);
     }
 }

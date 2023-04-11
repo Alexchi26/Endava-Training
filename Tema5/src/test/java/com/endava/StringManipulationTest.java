@@ -10,8 +10,8 @@ public class StringManipulationTest {
     @Test
     public void UppercaseATest() {
 
-        String inputString = "ana are ananas";
-        String expectedString = "AnA are anAnAs";
+        String inputString = "ana,are ananas";
+        String expectedString = "AnA,Are anAnAs";
 
         String modifiedString = UppercaseA(inputString);
 
@@ -22,8 +22,8 @@ public class StringManipulationTest {
     @Test
     public void initialsDisplayTest() {
 
-        String inputString = "Alexandru Chirila Alexandru";
-        String expectedString = "A C A";
+        String inputString = "Alexandru,Chirila Alexandru";
+        String expectedString = "A A";
 
         String actualString = initialsDisply(inputString);
 
