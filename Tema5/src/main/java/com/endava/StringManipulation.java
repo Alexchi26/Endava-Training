@@ -24,7 +24,7 @@ public class StringManipulation {
                         charactersOfTheString[i] = Character.toUpperCase(charactersOfTheString[i]);
                     }
                 }
-            } else {
+            } else if (charactersOfTheString[i] == ' ') {
                 isTheCharASpace = true;
             }
         }
@@ -49,7 +49,7 @@ public class StringManipulation {
                     listContainingTheInitials.add(String.valueOf(charactersOfTheString[i]));
                     isTheCharASpace = false;
                 }
-            } else {
+            } else if (charactersOfTheString[i] == ' ') {
                 isTheCharASpace = true;
             }
         }
